@@ -1,6 +1,6 @@
 package AutomationExercise;
 
-public class TestCase_7 {
+public class TestCase_07 {
     public static void main(String[] args) {
 
         // Verify Test Cases Page

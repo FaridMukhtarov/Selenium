@@ -1,6 +1,6 @@
 package AutomationExercise;
 
-public class TestCase_5 {
+public class TestCase_05 {
     public static void main(String[] args) {
 
         // Register User with existing email

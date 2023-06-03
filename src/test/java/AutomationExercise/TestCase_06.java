@@ -1,6 +1,6 @@
 package AutomationExercise;
 
-public class TestCase_6 {
+public class TestCase_06 {
     public static void main(String[] args) {
 
         // Contact Us Form

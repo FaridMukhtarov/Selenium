@@ -6,11 +6,10 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 
 import java.time.Duration;
 
-public class TestCase_2 {
+public class TestCase_02 {
 
     static WebDriver driver;
     static String url = "https://automationexercise.com/";

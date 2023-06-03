@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
 import java.util.List;
-public class TestCase_1 {
+public class TestCase_01 {
 
     static WebDriver driver;
     static String url = "http://automationexercise.com";
