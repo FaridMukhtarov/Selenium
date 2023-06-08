@@ -1,18 +1,19 @@
-package SeleniumWithEmrahSAGLAM;
+package SeleniumWithRahulShetty;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 
-public class JavaScriptExecuter {
+public class TakeScreenShot {
     static WebDriver driver;
-    static String url = "https://www.amazon.com/";
+    static String url = "https://www.google.com";
 
     public static void main(String[] args) throws InterruptedException, IOException {
 
@@ -22,12 +23,8 @@ public class JavaScriptExecuter {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get(url);
 
-        JavascriptExecutor jse = (JavascriptExecutor) driver;
-        WebElement sell = driver.findElement(By.xpath("//a[.='Sell products on Amazon']"));
-
-        jse.executeScript("arguments[0].scrollIntoView(true);", sell);
-        jse.executeScript("arguments[0].click();", sell);
-        jse.executeScript("window.scrollBy(0,500)");
+        File pictures = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(pictures,new File("/Users/farid/IdeaProjects/SeleniumTraining/ScreenShot/googlePage.png"));
 
         driver.quit();
     }

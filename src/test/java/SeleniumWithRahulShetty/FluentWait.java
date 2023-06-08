@@ -20,5 +20,6 @@ public class FluentWait {
         driver.get("https://the-internet.herokuapp.com/dynamic_loading/1");
 
 
+
     }
 }
