@@ -45,5 +45,6 @@ public class LinksCountInThePage {
 
         Thread.sleep(3000);
         driver.quit();
+
     }
 }

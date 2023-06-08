@@ -22,7 +22,6 @@ public class CalendarUI {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get(url);
 
-
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,900)");
         Thread.sleep(1000);
@@ -30,13 +29,16 @@ public class CalendarUI {
         WebElement dateOfTravel = driver.findElement(By.cssSelector("input[id='form-field-travel_comp_date']"));
         dateOfTravel.click();
 
-        WebElement buttonMonth = driver.findElement(By.cssSelector(".flatpickr-next-month"));
-        WebElement month = driver.findElement(By.cssSelector(".flatpickr-current-month"));
+        List<WebElement> days = driver.findElements(By.xpath("//span[@class='flatpickr-day ']"));
+        String currentDay = "20";
 
-
-//        String month = driver.findElement(By.className("cur-month")).getText();
-//        WebElement buttonTop = driver.findElement(By.className("arrowUp"));
-//        String currentYear = driver.findElement(By.cssSelector(".numInput.cur-year")).getText();
-//        List<WebElement> days = driver.findElements(By.cssSelector(".flatpickr-day "));
+        for (WebElement day : days) {
+            if (day.getText().equals(currentDay)){
+                day.click();
+                break;
+            }
+        }
+        Thread.sleep(2000);
+        driver.quit();
     }
 }

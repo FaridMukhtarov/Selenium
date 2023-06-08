@@ -17,7 +17,9 @@ public class FluentWait {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().window().maximize();
 
+
         driver.get("https://the-internet.herokuapp.com/dynamic_loading/1");
+
 
 
 
