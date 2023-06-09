@@ -51,7 +51,6 @@ public class Buttons {
         WebElement dynamicClickMessage = driver.findElement(By.id("dynamicClickMessage"));
         System.out.println("Dynamic Click Message: " + dynamicClickMessage.getText());
 
-
         driver.quit();
     }
 }

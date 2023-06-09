@@ -16,10 +16,7 @@ public class DriverManageMethods {
         driver.manage().window().maximize();
         driver.get("https://www.amazon.com/");
 
-
         driver.manage().window().getPosition();
-
-
 
         // seyfenin olcusunu verir
         Dimension getSize = driver.manage().window().getSize();

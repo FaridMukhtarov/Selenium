@@ -14,5 +14,28 @@ public class Synchronization_FluentWait {
 
     }
 
+    /*
+    3-) Fluent Wait
+
+    * Selenium’da Fluent Wait, web sürücüsünün bir koşulu beklemesi için maksimum süreyi ve Exception’ını
+    atmadan önce koşulu kontrol etmek istediğimiz sıklığı tanımlamak için kullanılır.Nesne bulunana veya zaman aşımı
+    gerçekleşene kadar düzenli aralıklarla web elementini kontrol eder.
+
+    * Syntax:
+
+      Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+        .withTimeout(Duration.ofSeconds(30))
+        .pollingEvery(Duration.ofSeconds(5))
+        .ignoring(Exception.class);
+
+      WebElement foo = wait.until(driver -> {
+        return driver.findElement(By.id("foo"));
+      });
+
+
+ Not :
+    Selenium Documents : https://www.selenium.dev/documentation/webdriver/waits/
+     */
+
     }
 

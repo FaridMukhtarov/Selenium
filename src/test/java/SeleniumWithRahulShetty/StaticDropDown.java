@@ -28,16 +28,13 @@ public class StaticDropDown {
         select.selectByVisibleText("USD");
         System.out.println(select.getFirstSelectedOption().getText());
 
-
         select.selectByValue("INR");
         System.out.println(select.getFirstSelectedOption().getText());
-
 
         select.selectByIndex(2);
         System.out.println(select.getFirstSelectedOption().getText());
 
         dropDown.click();
-
 
         Thread.sleep(3000);
         driver.quit();

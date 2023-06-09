@@ -19,7 +19,6 @@ public class DynamicDropDown {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get(url);
 
-
         WebElement from = driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXTaction"));
         from.click();
 

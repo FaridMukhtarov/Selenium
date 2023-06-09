@@ -37,10 +37,5 @@ public class Accordian {
         System.out.println("Baglandi: " + value.getAttribute("class"));
 
         driver.quit();
-
-
-
-
     }
-
 }

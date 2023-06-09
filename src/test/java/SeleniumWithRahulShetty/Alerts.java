@@ -19,18 +19,15 @@ public class Alerts {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get(url);
 
-
         WebElement alertbtn = driver.findElement(By.id("alertbtn"));
         alertbtn.click();
         System.out.println(driver.switchTo().alert().getText());
         driver.switchTo().alert().accept();
 
-
         WebElement confirmbtn = driver.findElement(By.id("confirmbtn"));
         confirmbtn.click();
         System.out.println(driver.switchTo().alert().getText());
         driver.switchTo().alert().dismiss();
-
 
         WebElement name = driver.findElement(By.id("name"));
         name.sendKeys("Farid");

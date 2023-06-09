@@ -34,19 +34,16 @@ public class Alerts {
         System.out.println(text);
         driver.switchTo().alert().accept();
 
-
         // Click Button to see alert
         WebElement alertButton = driver.findElement(By.id("alertButton"));
         alertButton.click();
         System.out.println(driver.switchTo().alert().getText());
         driver.switchTo().alert().accept();
 
-
         // On button click, confirm box will appear
         WebElement confirmButton = driver.findElement(By.id("confirmButton"));
         confirmButton.click();
         driver.switchTo().alert().dismiss();
-
 
         // On button click, prompt box will appear
         WebElement promtButton = driver.findElement(By.id("promtButton"));
@@ -55,6 +52,5 @@ public class Alerts {
         driver.switchTo().alert().accept();
 
         driver.quit();
-
     }
 }

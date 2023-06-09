@@ -34,7 +34,6 @@ public class Scrolling_JavaScriptExecutor {
             Integer number = Integer.parseInt(price.getText());
             sum += number;
         }
-
         String totalAmount = driver.findElement(By.className("totalAmount")).getText();
         Integer actualAmount = Integer.parseInt(totalAmount.split(":")[1].trim());
 

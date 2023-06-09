@@ -19,6 +19,5 @@ public class AutoComplete {
         driver.manage().window().maximize();
         driver.get(url);
 
-
     }
 }

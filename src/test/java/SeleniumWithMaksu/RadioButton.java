@@ -32,7 +32,6 @@ public class RadioButton {
         }else {
             System.out.println("yesRadio Button is not enabled");
         }
-
         WebElement noRadioButton = driver.findElement(By.id("noRadio"));
         String result = noRadioButton.isEnabled() ? "Radio Button is enabled" : "Radio Button is not enabled";
         System.out.println(result);

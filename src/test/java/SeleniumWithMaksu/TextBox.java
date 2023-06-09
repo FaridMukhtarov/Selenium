@@ -43,7 +43,6 @@ public class TextBox {
                 "Email:ferid@gmail.com\n" +
                 "Current Address :Baku, AzerbaijanBaku, Azerbaijan";
 
-
         if (output.getText().contains(expected)){
             System.out.println("Test Passed: \n" + output.getText());
         } else

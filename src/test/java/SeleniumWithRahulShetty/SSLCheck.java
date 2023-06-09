@@ -13,8 +13,6 @@ import org.openqa.selenium.safari.SafariOptions;
 
 public class SSLCheck {
     public static void main(String[] args) throws InterruptedException {
-
-
         // ssl accepted
 
          ChromeOptions options = new ChromeOptions();

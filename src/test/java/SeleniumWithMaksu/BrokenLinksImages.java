@@ -38,7 +38,6 @@ public class BrokenLinksImages {
         int responseCodeBroken = responseBroken.getStatusLine().getStatusCode();
         System.out.println("Status Code: " + responseCodeBroken);
 
-
         // Broken Image
         WebElement brokenImage = driver.findElement(By.xpath("//div/img[2]"));
         String brokenImageLink = brokenImage.getAttribute("src");
@@ -47,7 +46,6 @@ public class BrokenLinksImages {
         HttpResponse responseBrokenImage = client.execute(requestBrokenImage);
         int responseBrokenImageCode = responseBrokenImage.getStatusLine().getStatusCode();
         System.out.println("Broken Image Status Code: " + responseBrokenImageCode);
-
 
         // Valid Image
         WebElement validImage = driver.findElement(By.xpath("//div/img[1]"));

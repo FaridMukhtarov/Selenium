@@ -42,9 +42,7 @@ public class LinksCountInThePage {
             System.out.println("Link: " + url +", Page Title: " + pageTitle);
             driver.navigate().back();
         }
-
         Thread.sleep(3000);
         driver.quit();
-
     }
 }

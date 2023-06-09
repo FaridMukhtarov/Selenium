@@ -20,7 +20,6 @@ public class FileExist {
             System.out.println("Var");
         }else
             System.out.println("Yoxdur");
-
     }
     // System.out.println(pathUser); // /Users/farid
 }

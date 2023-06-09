@@ -27,16 +27,12 @@ public class DynamicProperties {
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-
         WebElement randomId = driver.findElement(By.xpath("This text has random Id"));
         System.out.println(randomId.getText());
-
 
         WebElement enableAfter = driver.findElement(By.id("enableAfter"));
         wait.until(ExpectedConditions.elementToBeClickable(enableAfter));
         enableAfter.click();
-
-
 
         WebElement colorChange = driver.findElement(By.id("colorChange"));
         String attribute = colorChange.getAttribute("class");
@@ -50,12 +46,9 @@ public class DynamicProperties {
         }else
             System.out.println("Do not enough time");
 
-
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("#visibleAfter")));
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.findElement(By.cssSelector("#visibleAfter")).click();
-
-
     }
 }

@@ -23,7 +23,5 @@ public class Miscellaneous {
         System.out.println(driver.manage().getCookies().size());
         driver.manage().deleteCookieNamed("cooking");
         driver.quit();
-
-
     }
 }

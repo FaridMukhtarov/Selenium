@@ -32,7 +32,6 @@ public class DatePicker {
 
         Thread.sleep(3000);
         driver.quit();
-
     }
     public static void dataSelect(String month, String year, String day){
         WebElement datePickerMonthYearInput = driver.findElement(By.id("datePickerMonthYearInput"));

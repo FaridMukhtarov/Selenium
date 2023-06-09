@@ -24,7 +24,6 @@ public class AddItemsToCart {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-
         String[] products = {"Cauliflower", "Beetroot", "Brinjal", "Potato", "Corn"};
         addItemsCart(driver, products);
     }
@@ -44,7 +43,6 @@ public class AddItemsToCart {
                 break;
             }
         }
-
         WebElement clickToCart = driver.findElement(By.xpath("//img[@alt='Cart']"));
         clickToCart.click();
 

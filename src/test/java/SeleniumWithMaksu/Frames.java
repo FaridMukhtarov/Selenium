@@ -37,7 +37,5 @@ public class Frames {
 
         driver.switchTo().parentFrame();
         driver.quit();
-
-
     }
 }
